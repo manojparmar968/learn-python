@@ -1,0 +1,3 @@
+0 manoj 100
+1 anita 100
+2 parmar 1000
