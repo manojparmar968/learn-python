@@ -17,11 +17,13 @@ value = 4
 
 # option 1
 
-# if key not in d:
-#     d[key] = value
-#     print(d)
+if key not in d:
+    d[key] = value
+    print(d)
+else:
+    print(d)
 
-# option 2
+# option 2, it will update the value of dict
 
-d[key] = value
-print(d)
+# d[key] = value
+# print(d)

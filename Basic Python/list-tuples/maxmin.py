@@ -16,11 +16,11 @@ if len(num) == 0:
     print(None)
 else:
     new_list = sorted(num)
-    print(new_list[:1] + new_list[-1:])
+    print(new_list[-1] , new_list[0])
 
 # option 1
 
-# if num:
-#     print(max(num), min(num))
-# else:
-#     print(None)
+if num:
+    print(max(num), min(num))
+else:
+    print(None)

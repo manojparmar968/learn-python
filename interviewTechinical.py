@@ -1,15 +1,15 @@
 
 
-# my_list = [[0, 1, 2, 3] for i in range(2)]
-# print(my_list[2][0])
+my_list = [[0, 1, 2, 3] for i in range(2)]
+print(my_list[2][0])
 
-var = 0
-while var < 6:
-    var += 1
-    print("var",var)
-    if var % 2 == 0:
-        continue
-    print("#")
+# var = 0
+# while var < 6:
+#     var += 1
+#     print("var",var)
+#     if var % 2 == 0:
+#         continue
+#     print("#")
 
 # var = 1
 # while var < 10:

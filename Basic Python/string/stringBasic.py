@@ -4,7 +4,7 @@ s1 = "str"
 s2 = "string"
 
 # if s1 in s2:
-#     print("si in s2")
+#     print("s1 in s2")
 
 for i in s1:
     if i in s2:

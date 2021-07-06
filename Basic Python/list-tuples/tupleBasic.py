@@ -11,8 +11,8 @@ A = ('ac',2 , 'today', 4.5)
 # print("A = ",A)
 
 t = tuple()
-t = 'a'
-t = ('a',)
+# t = 'a' # string
+# t = ('a',) # tuple
 # print(type(t))
 # print("t = ",t)
 
@@ -28,8 +28,8 @@ s = 'abc'
 l = [1,2,3]
 
 # tuples
-# for pair in zip(s,l):
-#     print(pair)
+for pair in zip(s,l):
+    print(pair)
 
 # list
 # list1 = list(zip(s,l))

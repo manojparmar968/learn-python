@@ -19,10 +19,10 @@ cou = 0
 
 # option 1
 
-# for i in range(len(num)):
-#     if num[i] > 3:
-#         cou += 1
-# print(cou)
+for i in range(len(num)):
+    if num[i] > 3:
+        cou += 1
+print(cou)
 
 # option 2
 

@@ -4,25 +4,25 @@ count = 0
 
 # option 1
 
-# for i in range(len(num)-1):
-#     for j in range(i+1,len(num)):
-#         if num[i]+num[j] == sum:
-#             count += 1
-#             print("index at",i,"and",j," = ",num[i]+num[j])
-# print(count)
+for i in range(len(num)-1):
+    for j in range(i+1,len(num)):
+        if num[i]+num[j] == sum:
+            count += 1
+            print("index at",i,"and",j," = ",num[i]+num[j])
+print(count)
 
 # option 2
 
-# def findsum(num,sum):
-#     for i in range(len(num)-1):
-#         for j in range(i+1, len(num)):
-#             if num[i]+num[j] == sum:
-#                 # print("num[i] = ",num[i]," and value of i = ",i)
-#                 print("Pair found at index ",i,j," = ")
-#                 # return 1
-#     # return -1
+def findsum(num,sum):
+    for i in range(len(num)-1):
+        for j in range(i+1, len(num)):
+            if num[i]+num[j] == sum:
+                # print("num[i] = ",num[i]," and value of i = ",i)
+                print("Pair found at index ",i,j," = ")
+                # return 1
+    # return -1
 
-# findsum(num,sum)
+findsum(num,sum)
 
 # option 3
 

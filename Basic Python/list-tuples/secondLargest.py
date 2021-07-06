@@ -13,6 +13,7 @@ if len(l) == 0 or len(l) == 1:
     print(None)
 else:
     list_sort = list(set(sorted(l)))
+    print(list_sort)
     print(list_sort[-2])
 
 # option 2

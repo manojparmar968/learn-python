@@ -9,13 +9,13 @@ str = ""
 
 # option 1
 
-# if len(s) == 0:
-#     print("")
-# else:
-#     for i in range(len(s)):
-#         if i%2 != 0:
-#             str = str+s[i]
-#     print(str)
+if len(s) == 0:
+    print("")
+else:
+    for i in range(len(s)):
+        if i%2 != 0:
+            str = str+s[i]
+    print(str)
 
 # option 2
 

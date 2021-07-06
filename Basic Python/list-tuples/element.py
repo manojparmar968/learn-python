@@ -11,7 +11,7 @@ s = [3,4,5,6]
 
 # option 1
 
-# new_s = ""
+new_s = ""
 
 # for i in s:
 #     new_s += "".join(i) + " "
@@ -20,8 +20,8 @@ s = [3,4,5,6]
 
 # option 2
 
-# for i in s:
-#     print(i, end=" ")
+for i in s:
+    print(i, end=" ")
 
 # option 3 
 

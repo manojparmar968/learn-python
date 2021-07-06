@@ -13,7 +13,7 @@ s = ["a","B","c","a","b","a","d","e","f","b","f"]
 
 # option 1
 
-duplicate_remove = list(set(s))
+duplicate_remove = sorted(list(set(s)))
 print(duplicate_remove)
 
 # option 2

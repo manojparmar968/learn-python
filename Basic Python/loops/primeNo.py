@@ -13,7 +13,7 @@ so the program should print "Not Prime" as the output for the value.
 
 """
 
-num = 2
+num = 5 # prime number = 2,3,5,7,11
 
 # option 1
 # is_Prime = True

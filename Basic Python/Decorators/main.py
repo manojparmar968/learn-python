@@ -1,22 +1,22 @@
-# def my_decorator(func):
-#     def wrapper(*args, **kwargs):
-#         print('hello world')
-#         res = func(*args, **kwargs)
-#         if res is not None:
-#             print(res)
-#         print('bye bye')
-#     return wrapper
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        print('hello world')
+        res = func(*args, **kwargs)
+        if res is not None:
+            print(res)
+        print('bye bye')
+    return wrapper
 
-# @my_decorator
-# def my_function():
-#     print('we are running ...')
+@my_decorator
+def my_function():
+    print('we are running ...')
 
-# @my_decorator
-# def calculate(x, y):
-#     return x + y
+@my_decorator
+def calculate(x, y):
+    return x + y
 
-# my_function()
-# calculate(2, 3)
+my_function()
+calculate(2, 3)
 
 
 # authenticated = False
@@ -42,22 +42,22 @@
 
 # calculate_sum(numbers)
 
-import time
+# import time
 
-def timer(func):
-    def wrapper(p_time):
-        start = time.time()
-        print('starting...')
-        func(p_time)
-        total = time.time() - start
-        print('done', total)
-    return wrapper
+# def timer(func):
+#     def wrapper(p_time):
+#         start = time.time()
+#         print('starting...')
+#         func(p_time)
+#         total = time.time() - start
+#         print('done', total)
+#     return wrapper
 
-@timer
-def do_something(pause):
-    time.sleep(pause)
-    print('hello world')
+# @timer
+# def do_something(pause):
+#     time.sleep(pause)
+#     print('hello world')
 
-do_something(1)
-do_something(5)
-do_something(3)
+# do_something(1)
+# do_something(5)
+# do_something(3)

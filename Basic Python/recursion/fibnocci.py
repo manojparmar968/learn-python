@@ -40,3 +40,41 @@ while(count <= n):
   a = b
   b = sum
   sum = a + b
+
+#   option 3 using while loop
+nterms = 9
+
+# first two terms
+n1, n2 = 0, 1
+count = 0
+
+# check if the number of terms is valid
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1, end=" ")
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
+
+# option 4 using a for loop
+
+a=9
+f=0                                         
+s=1                                     
+if a<=0:
+    print("The requested series is",f)
+else:
+    print(f,s,end=" ")
+    for x in range(2,a):
+        next=f+s                           
+        print(next,end=" ")
+        f=s
+        s=next

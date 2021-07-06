@@ -15,20 +15,20 @@ new_s = {}
 
 # option 1
 
-for i in s.lower():
-    if i not in new_s:
-        new_s[i] = 1
-    else:
-        new_s[i] += 1
-print(new_s)
+# for i in s.lower():
+#     if i not in new_s:
+#         new_s[i] = 1
+#     else:
+#         new_s[i] += 1
+# print(new_s)
 
 # option2
 
-# for char in s.lower():
-#     if char.isalpha():
-#         if char in new_s:
-#             new_s[char] += 1
-#         else:
-#             new_s[char] = 1
+for char in s.lower():
+    if char.isalpha():
+        if char in new_s:
+            new_s[char] += 1
+        else:
+            new_s[char] = 1
 
-# print(new_s)
+print(new_s)
