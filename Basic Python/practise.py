@@ -1,7 +1,15 @@
-i = "manoj_parmar_india.json"
-print(i.split('_'))
-print(i.split('_')[::-1])
-print(i.split('_')[::-1][0])
-print(i.split('_')[::-1][0].split('.'))
-print(i.split('_')[::-1][0].split('.')[0])
-print(i.split('_')[::-1][0].split('.')[0].capitalize())
+import os
+import requests
+
+def get_droplets():
+    url = 'https://reqres.in/api/users?page=2'
+    r = requests.get(url)
+    print(r.json())
+    # r = requests.get(url, headers={'Authorization':'Bearer %s' % 'access_token'})
+    # droplets = r.json()
+    # droplet_list = []
+    # for i in range(len(droplets['droplets'])):
+    #     droplet_list.append(droplets['droplets'][i])
+    # return droplet_list
+
+get_droplets()

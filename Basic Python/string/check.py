@@ -23,10 +23,10 @@ s2 = 'The quick brown fox jumps over the lazy dog'
 
 # option 2
 
-# set_s = set(s2.lower())
-# if " " in set_s:
-#     set_s.remove(" ")
-# print(set_s == set(string.ascii_lowercase))
+set_s = set(s2.lower())
+if " " in set_s:
+    set_s.remove(" ")
+print(set_s == set(string.ascii_lowercase))
 
 # option 3
 
@@ -39,10 +39,10 @@ s2 = 'The quick brown fox jumps over the lazy dog'
 
 # option 4
 
-is_panagram = True
+# is_panagram = True
 
-for char in string.ascii_lowercase:
-    if char not in s2.lower():
-        is_panagram = False
-        break
-print(is_panagram)
+# for char in string.ascii_lowercase:
+#     if char not in s2.lower():
+#         is_panagram = False
+#         break
+# print(is_panagram)

@@ -1,0 +1,41 @@
+Install Redis Server in Ubuntu
+sudo apt install redis-server
+
+restart the Redis service
+sudo systemctl restart redis.service
+
+starting redis server
+redis-server
+
+checking that the Redis service is running
+sudo systemctl status redis
+
+check server is working on cli
+redis-cli
+>ping #ans is Pong
+
+to exit from cli
+exit
+
+redis-cli ping
+
+More about Redis server
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04
+
+if you uing window redis server will not support for windows in case use redis lab
+login -> https://app.redislabs.com/#/login after login you create database and import is endpoints for communication
+signup -> https://redis.com/try-free/
+
+channels 
+python3 -m pip install channels_redis
+# Channels in settings.py
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+            # if using redis lab
+            "hosts": [('redis://:redislabpassword@endpoint')]
+        },
+    },
+}

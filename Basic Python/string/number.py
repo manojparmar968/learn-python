@@ -9,7 +9,7 @@ s1 = "4567"
 s2 = "manoj968"
 s3 = ""
 
-if len(s) == 0:
+if len(s3) == 0:
     print("False")
 else:
-    print(s1.isdecimal())
+    print(s3.isdecimal())

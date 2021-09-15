@@ -1,31 +1,11 @@
-class complex_number:
-    def __init__(self,r=0,i=0):
-        self.real = r
-        self.img = i
+height = 7
+if height % 2 == 0:
+    print("Please enter a odd value for height: ")
+else:
+    middle_row = (height + 2) // 2
+    # print(middle_row)
+    for i in range(middle_row):
+        print(" " * (middle_row-i), "*" * (i*2+1))
 
-    def __str__(self):
-        # return ("{0}+{1}i".format(self.real,self.img))
-        return f"complex_number = {self.real} + {self.img}i"
-
-    def add_complex(self,obj):
-        c3 = complex_number()
-        c3.real = self.real + obj.real
-        c3.img = self.img + obj.img
-        return c3
-
-c1 = complex_number(2,5)
-print(c1)
-c2 = complex_number(1,4)
-print(c2)
-c3 = c1.add_complex(c2)
-print(c3)
-
-
-# import re
-# pattern = r"[aeiou]"
-# string = input()
-# if re.search(pattern,string):
-#     print("match")
-# else:
-#     print("not")
-
+    for i in range(middle_row-2,-1,-1):
+        print(" "*(middle_row-i), "*" * (i*2+1))

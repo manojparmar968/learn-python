@@ -1,0 +1,7 @@
+https://github.com/django/daphne
+
+learning working of wensocket  in django
+https://www.youtube.com/watch?v=plKYBBzqNLc
+
+👉 Deploy with Nginx as a webserver, daphne for ws and guncicorn for HTTP - 
+https://www.untangled.dev/2020/08/02/django-websockets-minimal-setup/#:~:text=Before%20introducing%20websockets%2C%20the%20web,requests%20by%20talking%20to%20daphne%20

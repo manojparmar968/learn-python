@@ -15,3 +15,4 @@ def my_gen():
 a = my_gen()
 next(a)
 next(a)
+next(a)
