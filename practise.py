@@ -1,11 +1,6 @@
-height = 7
-if height % 2 == 0:
-    print("Please enter a odd value for height: ")
-else:
-    middle_row = (height + 2) // 2
-    # print(middle_row)
-    for i in range(middle_row):
-        print(" " * (middle_row-i), "*" * (i*2+1))
+fruits = ["mango","grapes","kiwi","cherry","banana"]
+# [print(x) for x in fruits]
 
-    for i in range(middle_row-2,-1,-1):
-        print(" "*(middle_row-i), "*" * (i*2+1))
+# a = [x for x in fruits if "apple" != x]
+fruits.sort(reverse = True)
+print(fruits)
